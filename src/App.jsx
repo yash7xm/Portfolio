@@ -1,13 +1,22 @@
 import './App.css'
 import Sidebar from './Components/Sidebar'
-import Content from './Components/Content'
+import Projects from './Components/Projects'
+import About from './Components/About'
+import { useState } from 'react'
+
 
 function App() {
 
+  const [content, setContent] = useState(0);
+
+  const changeContent = (newContent) => {
+    setContent(newContent);
+  }
+
   return (
     <div className="app">
-      <Sidebar />
-      <Content />
+      <Sidebar changeContent = {changeContent}/>
+      {content === 0 ? <Projects /> : <About />}
     </div>
   )
 }
