@@ -1,0 +1,48 @@
+.project {
+    height: 50vh;
+    /* background-color: rgb(28, 28, 28); */
+    overflow: hidden;
+}
+
+.project-img {
+    height: 80%;
+    background-color: black;
+    border-radius: 6px;
+}
+
+.project-info {
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+
+.p-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.p-name, .project-date {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4em;
+    text-align: start;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.p-short-info, .project-desc {
+    font-family: "Roboto Mono", monospace;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.project-desc {
+   width: 65%;
+   
+}
