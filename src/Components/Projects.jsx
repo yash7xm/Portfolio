@@ -12,6 +12,8 @@ function Projects() {
                 <Project />
                 <Project />
                 <Project />
+                <Project />
+                <Project />
             </div>
        </div>
     )

@@ -1,16 +1,20 @@
 import '../assets/Styles/Project.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Project() {
     return (
         <div className="project">
             <div className="project-img">
-                
+                <div className="img">
+                    <img src="src/assets/Images/img.png" alt="Vyzon" />
+                </div>
             </div>
             <div className="project-info">
                 <div className="p-info">
                     <div className="project-name">
                         <div className="p-name">
-                            Vizon
+                            Vyzon
                         </div>
                         <div className="p-short-info">
                             Programming Language
@@ -22,7 +26,10 @@ function Project() {
                         programming.
                     </div>
                     <div className="project-date">
-                        2023
+                        <div className="date">2023</div>
+                        <div className="arrow">
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        </div>
                     </div>
                 </div>
             </div>

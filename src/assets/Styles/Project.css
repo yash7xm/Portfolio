@@ -1,14 +1,31 @@
 .project {
     height: 50vh;
-    /* background-color: rgb(28, 28, 28); */
     overflow: hidden;
+    cursor: pointer;
 }
+
 
 .project-img {
     height: 80%;
-    background-color: black;
+    background-color: #1c1c1c;
+    border-radius: 6px;
+    padding: 0.5rem 4rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: padding 0.4s;
+}
+
+.img {
+    padding: 0.5rem;
+    height: 100%;
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.06);
     border-radius: 6px;
 }
+
+img {
+    border-radius: 6px;
+}
+
 
 .project-info {
     display: flex;
@@ -23,7 +40,8 @@
     width: 100%;
 }
 
-.p-name, .project-date {
+.p-name,
+.project-date {
     font-family: "IBM Plex Mono", monospace;
     font-size: 12px;
     font-weight: 500;
@@ -33,7 +51,8 @@
     color: #ffffff;
 }
 
-.p-short-info, .project-desc {
+.p-short-info,
+.project-desc {
     font-family: "Roboto Mono", monospace;
     font-size: 11px;
     font-weight: 400;
@@ -42,7 +61,22 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+.project-date {
+    width: 8%;
+    transform: translateX(30%);
+    transition: transform 0.4s;
+    display: flex;
+    gap: 0.6rem;
+}
+
 .project-desc {
-   width: 65%;
-   
+    width: 65%;
+}
+
+.project:hover .project-img {
+    padding: 0.25rem 3.5rem;
+}
+
+.project:hover .project-date {
+    transform: translateX(-10%);
 }
