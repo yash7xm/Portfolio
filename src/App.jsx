@@ -10,13 +10,16 @@ function App() {
   const [content, setContent] = useState(0);
 
   const changeContent = (newContent) => {
+    console.log(newContent);
     setContent(newContent);
   }
 
   return (
     <div className="app">
-      <Sidebar changeContent = {changeContent}/>
-      {content === 0 ? <Projects /> : <About />}
+      <Sidebar changeContent={changeContent} />
+      {content === 0 ?
+        <Projects/> :
+        <About />}
     </div>
   )
 }
