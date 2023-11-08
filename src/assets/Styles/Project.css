@@ -80,3 +80,7 @@ img {
 .project:hover .project-date {
     transform: translateX(-10%);
 }
+
+.return-btn {
+    cursor: pointer;
+}

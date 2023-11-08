@@ -6,8 +6,12 @@
 
 .header {
     height: 6%;
+    width: 100%;
     padding: 1rem;
-    border-bottom: 1px solid  rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    position: fixed;
+    z-index: 9999999;
+    background-color: hsl(0, 0%, 8%);
 }
 
 .project-btn {
@@ -22,4 +26,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 1rem;
+    position: relative;
+    top: 6%;
 }
