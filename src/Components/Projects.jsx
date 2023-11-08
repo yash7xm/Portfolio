@@ -10,13 +10,14 @@ function Projects() {
 
     const changeView = (index) => {
         console.log(index);
+        document.querySelector('.view').scrollTo(0,0);
         setView(index);
     }
 
     let projects = [];
 
     for (let i = 0; i < 6; i++) {
-        projects.push(<Project index={i} changeView = {changeView} />);
+        projects.push(<Project index={i} changeView={changeView} />);
     }
 
     return (
@@ -25,20 +26,22 @@ function Projects() {
                 {view === -1 ? (
                     <div className='project-btn'>My Projects</div>
                 ) :
-                (
-                    <div className='project-btn return-btn' onClick={() => changeView(-1)}>
-                        <FontAwesomeIcon icon={faArrowLeft} color='rgba(255, 255, 255, 0.6)'/>
-                        <span> </span>
-                        See All Projects
-                    </div>
-                )}
-                
+                    (
+                        <div className='project-btn return-btn' onClick={() => changeView(-1)}>
+                            <FontAwesomeIcon icon={faArrowLeft} color='rgba(255, 255, 255, 0.6)' />
+                            <span> </span>
+                            See All Projects
+                        </div>
+                    )}
+
             </div>
-            {view === -1 ? (
-                <div className="projects-grid">
-                    {...projects}
-                </div>
-            ) : <ExpandProject index = {view}/>}
+            <div className="view">
+                {view === -1 ? (
+                    <div className="projects-grid">
+                        {...projects}
+                    </div>
+                ) : <ExpandProject index={view} />}
+            </div>
         </div>
     )
 }
