@@ -42,8 +42,6 @@ function ExpandProject() {
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }
