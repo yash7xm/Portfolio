@@ -1,4 +1,6 @@
 import '../assets/Styles/Sidebar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar({changeContent}) {
     return (
@@ -6,6 +8,9 @@ function Sidebar({changeContent}) {
             <div className="info">
                 <div className="name">Yash Poonia</div>
                 <div className="desc">Passionate computer engineering student excelling in programming, web development, and software engineering.</div>
+                <div className="menu-btn">
+                    <FontAwesomeIcon icon={faBars} />
+                </div>
             </div>
             <div className="buttons">
                 <div className="projects-btn btn" onClick={() => changeContent(0)}>
