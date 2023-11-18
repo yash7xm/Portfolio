@@ -4,12 +4,11 @@
     cursor: pointer;
 }
 
-
 .project-img {
     height: 80%;
     background-color: #1c1c1c;
     border-radius: 6px;
-    padding: 0.5rem 4rem;
+    padding: 5% 8%;
     border: 1px solid rgba(255, 255, 255, 0.06);
     transition: padding 0.4s;
 }
@@ -25,7 +24,6 @@
 img {
     border-radius: 6px;
 }
-
 
 .project-info {
     display: flex;
@@ -74,7 +72,7 @@ img {
 }
 
 .project:hover .project-img {
-    padding: 0.25rem 3.5rem;
+    padding: 3% 3.5%; 
 }
 
 .project:hover .project-date {
@@ -83,4 +81,35 @@ img {
 
 .return-btn {
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .project {
+        height: 75vh;
+    }
+
+    .project-img {
+        padding: 3% 5%; 
+
+    }
+
+    .project-desc {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .project {
+        height: 40vh;
+    }
+
+    .project-img {
+        padding: 1% 8%;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-img {
+        padding: 5% 12%;
+    }
 }
