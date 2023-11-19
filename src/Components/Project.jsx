@@ -7,7 +7,7 @@ function Project({index, changeView}) {
         <div className="project" onClick={() => changeView(index)}>
             <div className="project-img">
                 <div className="img">
-                    <img src="src/assets/Images/img.png" alt="Vyzon" />
+                    <img src="https://res.cloudinary.com/dgl5jcwgb/image/upload/v1700377042/img_afztvh.png" alt="Vyzon" />
                 </div>
             </div>
             <div className="project-info">

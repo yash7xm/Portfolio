@@ -124,4 +124,8 @@ img {
         color: white;
         cursor: pointer;
     }
+
+    .buttons {
+        z-index: 999999;
+    }
 }
