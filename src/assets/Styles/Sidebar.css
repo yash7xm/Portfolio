@@ -125,8 +125,10 @@ img {
 
     .buttons {
         z-index: 20;
-        height: 90%;
         position: absolute;
-        top: 16%;
+        top: 10%;
+        display: none;
+        background-color: hsl(0, 0%, 8%);
+        height: 100%;
     }
 }

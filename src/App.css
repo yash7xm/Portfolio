@@ -15,5 +15,6 @@
 @media (max-width: 900px) {
     .app {
       flex-direction: column;
+      position: relative;
     }
 }

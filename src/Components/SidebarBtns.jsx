@@ -2,7 +2,7 @@ import '../assets/Styles/SidebarBtns.css'
 
 function SidebarBtns({changeContent, mobile}) {
     return (
-        <div className="buttons" style={{ display: mobile === 1 ? 'flex' : 'none' }}>
+        <div className="buttons" style={{ display: mobile ? 'flex' : 'none' }}>
         <div className="projects-btn btn" onClick={() => changeContent(0)}>
             <div className="btn-internal">
                 <div className="projects-btn-img btn-img">
@@ -33,6 +33,7 @@ function SidebarBtns({changeContent, mobile}) {
                 </div>
             </div>
         </div>
+        
     </div>
     )
 }
