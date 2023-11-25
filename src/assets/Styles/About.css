@@ -108,7 +108,7 @@
 }
 
 .footer {
-    padding: 2.5rem;  
+    padding: 2.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -121,7 +121,6 @@
         /* flex-direction: column; */
         grid-template-columns: 100%;
         grid-template-rows: 100vh 100vh;
-
         width: 100%;
         overflow-y: scroll;
         /* height: calc(94% * 2); */
@@ -130,6 +129,9 @@
 
     .as0 {
         width: 100%;
+        height: fit-content;
+        margin-bottom: 2rem;
+
     }
 
     .as1 {
@@ -137,7 +139,7 @@
     }
 
     .my-img {
-    height: fit-content;
+        height: fit-content;
     }
 }
 
@@ -146,7 +148,7 @@
         width: 100vw;
         position: absolute;
         top: 10%;
-    } 
+    }
 
     .sk {
         width: 100%;
