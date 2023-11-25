@@ -38,7 +38,10 @@ function Sidebar({ changeContent }) {
                 </div>
             </div>
             <div className="buttons" style={{ display: mobile ? 'none' : 'flex' }}>
-                <div className="projects-btn btn" onClick={() => changeContent(0)}>
+                <div className="projects-btn btn" onClick={() => {
+                    changeContent(0);
+                    setMobileNav();
+                }}>
                     <div className="btn-internal">
                         <div className="projects-btn-img btn-img">
                             <img src="https://framerusercontent.com/images/4tR2kkcmNDwWLyCTL6UKBxtGk.png" alt="" />
@@ -49,7 +52,10 @@ function Sidebar({ changeContent }) {
                         </div>
                     </div>
                 </div>
-                <div className="about-btn btn" onClick={() => changeContent(1)}>
+                <div className="about-btn btn" onClick={() => {
+                    changeContent(1);
+                    setMobileNav();
+                }}>
                     <div className="btn-internal">
                         <div className="about-btn-img btn-img">
                             <img src="https://framerusercontent.com/images/4tR2kkcmNDwWLyCTL6UKBxtGk.png" alt="" />
