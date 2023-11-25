@@ -13,13 +13,13 @@ function About() {
                     </div>
                     <div className="my-info">
                         <div className='hd'>Hi, I'm Yash  👋🏼</div>
-                        <div className='bdy mrb'>A Computer Engineering student passionate about programming language development, web tech, and software engineering. I'm focused on creating innovative projects and tackling coding challenges. Beyond academia, I've crafted a custom language, built an Integrated Learning Platform (ILP), and led the development of an interactive typing web app.</div>
-                        <div className="bdy">Outside the digital world, I enjoy exploring code conversion intricacies, participating in coding competitions, and constantly seeking growth opportunities. My commitment to excellence in academics and projects mirrors my passion for pushing the boundaries of what's possible in the tech realm. Let's connect and explore the limitless possibilities of coding together!</div>
+                        <div className='bdy mrb cr-0'>A Computer Engineering student passionate about programming language development, web tech, and software engineering. I'm focused on creating innovative projects and tackling coding challenges. Beyond academia, I've crafted a custom language, built an Integrated Learning Platform (ILP), and led the development of an interactive typing web app.</div>
+                        <div className="bdy cr-1">Outside the digital world, I enjoy exploring code conversion intricacies, participating in coding competitions, and constantly seeking growth opportunities. My commitment to excellence in academics and projects mirrors my passion for pushing the boundaries of what's possible in the tech realm. Let's connect and explore the limitless possibilities of coding together!</div>
                     </div>
 
                 </div>
                 <div className="as1">
-                    <div className="edu">
+                    <div className="edu block">
                         <div className="hd">Education</div>
                         <div className="bdy">2021 - 2025</div>
                         <div className='bdy mrb'>↳ Computer science and engineering</div>
@@ -30,7 +30,7 @@ function About() {
                         <div className="bdy">↳ Class 10 (CBSE)</div>
                         <div className="bdy mrb">↳ 93.4%</div> */}
                     </div>
-                    <div className="skills">
+                    <div className="skills block">
                         <div className="hd">Skills</div>
                         <div className="sk">
                             <div className="sk0">
@@ -60,7 +60,7 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="contact">
+                    <div className="contact block">
                         <div className="hd">Contact</div>
                         <a href="https://github.com/yash7xm" className='hd clr'>↳ github.com/yash7xm</a>
                         <div></div>
@@ -71,7 +71,7 @@ function About() {
                         <a href="https://leetcode.com/Yash_7xm/" className='hd clr'>↳ leetcode.com/Yash_7xm/</a>
                     </div>
 
-                    <div className="achievements">
+                    <div className="achievements block">
                         <div className="hd">ACHIEVEMENTS</div>
                         <div className='bdy'>↳ Created a custom programming
                             language.</div>
