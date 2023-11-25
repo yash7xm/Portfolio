@@ -101,6 +101,11 @@
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.footer {
+    padding: 2.5rem;
+    
+}
+
 @media (max-width: 1200px) {
 
     .about {
@@ -131,10 +136,18 @@
     .about {
         width: 100vw;
         position: absolute;
+        top: 10%;
     } 
 
     .sk {
         width: 100%;
+    }
+
+    .abt-btn {
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
