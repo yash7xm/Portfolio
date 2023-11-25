@@ -10,7 +10,7 @@ function Projects() {
 
     const changeView = (index) => {
         console.log(index);
-        document.querySelector('.view').scrollTo(0, 0);
+        document.querySelector('.projects').scrollTo(0, 0);
         setView(index);
     }
 
