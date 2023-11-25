@@ -9,7 +9,8 @@ function About() {
             <div className="abt-content">
                 <div className="as0">
                     <div className="my-img">
-
+                        <img src="https://res.cloudinary.com/dgl5jcwgb/image/upload/v1700918211/IMG_20230703_213438_303_vvyxvf.jpg" alt="" />
+                        {/* <img src="https://res.cloudinary.com/dgl5jcwgb/image/upload/v1700918144/1_1_z9ednb.png" alt="" /> */}
                     </div>
                     <div className="my-info">
                         <div className='hd'>Hi, I'm Yash  👋🏼</div>

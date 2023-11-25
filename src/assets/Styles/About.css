@@ -38,8 +38,14 @@
 
 .my-img {
     height: 70%;
-    width: 100%;
+    width: fit-content;
     background-color: aliceblue;
+}
+
+.my-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .my-info {
@@ -102,8 +108,7 @@
 }
 
 .footer {
-    padding: 2.5rem;
-    
+    padding: 2.5rem;  
 }
 
 @media (max-width: 1200px) {
@@ -130,6 +135,10 @@
     .as1 {
         width: 100%;
     }
+
+    .my-img {
+    height: fit-content;
+    }
 }
 
 @media (max-width: 900px) {
@@ -152,9 +161,9 @@
 }
 
 @media (max-width: 575px) {
-    .cr-1 {
+    /* .cr-1 {
         display: none;
-    }
+    } */
 
     .sk {
         flex-direction: column;
