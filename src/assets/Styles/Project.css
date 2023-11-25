@@ -8,7 +8,7 @@
     height: 80%;
     background-color: #1c1c1c;
     border-radius: 6px;
-    padding: 3% 8%;
+    padding: 3% 10%;
     border: 1px solid rgba(255, 255, 255, 0.06);
     transition: padding 0.4s;
 }

@@ -5,7 +5,7 @@ function ExpandProject() {
         <div className="project-detail">
             <div className="main-img">
                 <div className="inner-img">
-                    <img src="https://res.cloudinary.com/dgl5jcwgb/image/upload/v1700377042/img_afztvh.png" alt="ProjectImage" />
+                    <img src="https://res.cloudinary.com/dgl5jcwgb/image/upload/v1700897021/semicolon_lx52cl.png" alt="ProjectImage" />
                 </div>
             </div>
 
