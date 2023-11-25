@@ -9,6 +9,8 @@ function Sidebar({ changeContent }) {
 
     const setMobileNav = () => {
         setMobile((prevState) => !prevState);
+        if(window.innerWidth > 900) 
+        setMobile(false);
         console.log(mobile);
     };
 
