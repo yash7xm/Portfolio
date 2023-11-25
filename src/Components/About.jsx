@@ -62,6 +62,13 @@ function About() {
                     </div>
                     <div className="contact">
                         <div className="hd">Contact</div>
+                        <a href="https://github.com/yash7xm" className='hd clr'>↳ github.com/yash7xm</a>
+                        <div></div>
+                        <a href="https://twitter.com/Yash_Poonia_" className='hd clr'>↳ twitter.com/Yash_Poonia_</a>
+                        <div></div>
+                        <a href="https://www.linkedin.com/in/YashPoonia" className='hd clr'>↳ linkedin.com/in/YashPoonia</a>
+                        <div></div>
+                        <a href="https://leetcode.com/Yash_7xm/" className='hd clr'>↳ leetcode.com/Yash_7xm/</a>
                     </div>
 
                 </div>
