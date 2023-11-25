@@ -113,3 +113,10 @@
     color: rgba(255, 255, 255, 0.75);
     letter-spacing: -0.2px;
 }
+
+.achievements {
+    padding: 1rem;
+    background-color: #1c1c1c;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}

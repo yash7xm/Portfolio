@@ -32,33 +32,33 @@ function About() {
                     </div>
                     <div className="skills">
                         <div className="hd">Skills</div>
-                       <div className="sk">
-                       <div className="sk0">
-                            <div className="bdy">Programming Languages</div>
-                            <div className='bdy'>↳ JavaScript</div>
-                            <div className="bdy">↳ Java</div>
-                            <div className="bdy">↳ Python</div>
-                            <div className='bdy'>↳ TypeScript</div>
-                            <div className="bdy">↳ C++</div>
-                            <div className="bdy">↳ C</div>
+                        <div className="sk">
+                            <div className="sk0">
+                                <div className="bdy">Programming Languages</div>
+                                <div className='bdy'>↳ JavaScript</div>
+                                <div className="bdy">↳ Java</div>
+                                <div className="bdy">↳ Python</div>
+                                <div className='bdy'>↳ TypeScript</div>
+                                <div className="bdy">↳ C++</div>
+                                <div className="bdy">↳ C</div>
+                            </div>
+                            <div className="sk1">
+                                <div className="bdy">Web Technologies</div>
+                                <div className='bdy'>↳ Node.js</div>
+                                <div className="bdy">↳ Express.js</div>
+                                <div className='bdy'>↳ React</div>
+                                <div className="bdy">↳ MongoDB</div>
+                                <div className="bdy">↳ HTML</div>
+                                <div className="bdy">↳ CSS</div>
+                                <div className="bdy">↳ EJS</div>
+                                <div className="bdy">↳ Three.js</div>
+                            </div>
+                            <div className="sk2">
+                                <div className="bdy">Operating Systems</div>
+                                <div className='bdy'>↳ Linux</div>
+                                <div className="bdy">↳ Windows</div>
+                            </div>
                         </div>
-                        <div className="sk1">
-                            <div className="bdy">Web Technologies</div>
-                            <div className='bdy'>↳ Node.js</div>
-                            <div className="bdy">↳ Express.js</div>
-                            <div className='bdy'>↳ React</div>
-                            <div className="bdy">↳ MongoDB</div>
-                            <div className="bdy">↳ HTML</div>
-                            <div className="bdy">↳ CSS</div>
-                            <div className="bdy">↳ EJS</div>
-                            <div className="bdy">↳ Three.js</div>
-                        </div>
-                        <div className="sk2">
-                            <div className="bdy">Operating Systems</div>
-                            <div className='bdy'>↳ Linux</div>
-                            <div className="bdy">↳ Windows</div>
-                        </div>
-                       </div>
                     </div>
                     <div className="contact">
                         <div className="hd">Contact</div>
@@ -69,6 +69,23 @@ function About() {
                         <a href="https://www.linkedin.com/in/YashPoonia" className='hd clr'>↳ linkedin.com/in/YashPoonia</a>
                         <div></div>
                         <a href="https://leetcode.com/Yash_7xm/" className='hd clr'>↳ leetcode.com/Yash_7xm/</a>
+                    </div>
+
+                    <div className="achievements">
+                        <div className="hd">ACHIEVEMENTS</div>
+                        <div className='bdy'>↳ Created a custom programming
+                            language.</div>
+                        <div className="bdy">
+                            ↳ Developed an interpreter for the custom
+                            programming language.
+                        </div>
+                        <div className="bdy">
+                            ↳ Solved over 500+ coding challenges on various platforms, showcasing expertise in problem-solving.
+                        </div>
+                        <div className="bdy">
+                            ↳ Secured victory in multiple coding
+                            competitions.
+                        </div>
                     </div>
 
                 </div>
