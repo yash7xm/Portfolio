@@ -24,6 +24,7 @@
     line-height: 1.4em;
     text-align: start;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .info .desc {
@@ -42,6 +43,7 @@
     padding: 1rem;
     height: 84%;
 }
+
 
 .btn {
     padding: 0.5rem 0.5rem;

@@ -18,7 +18,7 @@ function App() {
     <div className="app">
       <Sidebar changeContent={changeContent} />
       {content === 0 ?
-        <Projects/> :
+        <Projects /> :
         <About />}
     </div>
   )
