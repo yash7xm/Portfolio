@@ -18,7 +18,7 @@ function Projects() {
   for (let i = 0; i < 6; i++) {
     projects.push(
       <Link to="/project/pid">
-        <Project index={i} changeView={changeView} />
+        <Project />
       </Link>
     );
   }

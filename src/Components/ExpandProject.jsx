@@ -57,6 +57,14 @@ function ExpandProject() {
             </div>
           </div>
         </div>
+        <div className="project-vid">
+          <div className="vid">
+            <img
+              src="https://framerusercontent.com/images/0L4ByzyLonZaaYGw9F7w0kkuEo.gif"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -4,14 +4,15 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Sidebar from "./Components/Sidebar.jsx";
 import About from "./Components/About.jsx";
-import { useState } from "react";
 import Projects from "./Components/Projects.jsx";
 import ExpandProject from "./Components/ExpandProject.jsx";
+import Error from "./Components/Error.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",

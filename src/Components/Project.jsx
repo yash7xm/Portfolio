@@ -2,9 +2,9 @@ import "../assets/Styles/Project.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-function Project({ index, changeView }) {
+function Project() {
   return (
-    <div className="project" onClick={() => changeView(index)}>
+    <div className="project">
       <div className="project-img">
         <div className="img">
           <img
