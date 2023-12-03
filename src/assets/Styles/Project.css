@@ -111,6 +111,16 @@ img {
   }
 }
 
+@media (min-height: 1000px) {
+  .project {
+    height: 50vh;
+  }
+
+  .project-img {
+    padding: 5% 10%;
+  }
+}
+
 @media (max-width: 600px) {
   .project {
     height: 40vh;

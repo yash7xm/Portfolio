@@ -65,6 +65,31 @@ function ExpandProject() {
             />
           </div>
         </div>
+        <div className="project-text-0 project-text">
+          <div className="text">
+            <div className="hd">PROMPT</div>
+            <div className="bdy mrb">
+              Global Citizen is a non-profit organization and action platform
+              with a mission to end extreme poverty by 2030. I was tasked to
+              redesign their mobile app to shift their overall product goal and
+              value proposition.
+            </div>
+            <div className="bdy mrb">
+              It’s a lofty goal to end extreme poverty with an app. It's also
+              difficult to successfully connect users to such a large global
+              movement in a digital space. Our team wanted to shift and simplify
+              the messaging of the Global Citizen app: a space where you can do
+              small things every day that positively impact yourself, your
+              community, and the world around you.
+            </div>
+            <div className="bdy mrb">
+              At the time, the GC app acted more as a passive content delivery
+              system and less as a place to facilitate user action and journey.
+              Our goal with this project was to redesign the app to encourage
+              daily action on critical global issues.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -177,6 +177,46 @@
   border-radius: 12px;
 }
 
+.hd {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4em;
+  text-align: start;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.bdy {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  letter-spacing: 0em;
+  margin-bottom: 0.25rem;
+}
+
+.mrb {
+  margin-bottom: 1rem;
+}
+
+.project-text {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 6rem 10rem 4rem 2rem;
+}
+
+.text {
+  height: 100%;
+  width: 40%;
+}
+
 @media (max-width: 1200px) {
   .main-img, .project-vid {
     height: 75%;
@@ -194,9 +234,18 @@
   .summary {
     width: calc(100% / 2);
   }
+
+  .text {
+    width: 70%;
+  }
+
+  .project-text {
+    justify-content: center;
+    padding: 6rem 4rem 4rem 2rem;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .project-detail {
     width: 100%;
     height: 90%;
@@ -215,6 +264,19 @@
 
   .summary {
     width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .project-text {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .project-detail::-webkit-scrollbar {
+    width: 6px;
   }
 }
 
