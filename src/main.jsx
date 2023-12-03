@@ -6,6 +6,7 @@ import Sidebar from "./Components/Sidebar.jsx";
 import About from "./Components/About.jsx";
 import { useState } from "react";
 import Projects from "./Components/Projects.jsx";
+import ExpandProject from "./Components/ExpandProject.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
+      {
+        path: "/project/:proId",
+        element: <ExpandProject />
+      }
     ],
   },
 ]);

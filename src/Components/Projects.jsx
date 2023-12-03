@@ -2,8 +2,7 @@ import { useState } from "react";
 import "../assets/Styles/Projects.css";
 import Project from "./Project";
 import ExpandProject from "./ExpandProject";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Projects() {
   const [view, setView] = useState(-1);
@@ -17,27 +16,17 @@ function Projects() {
   let projects = [];
 
   for (let i = 0; i < 6; i++) {
-    projects.push(<Project index={i} changeView={changeView} />);
+    projects.push(
+      <Link to="/project/pid">
+        <Project index={i} changeView={changeView} />
+      </Link>
+    );
   }
 
   return (
     <div className="projects">
       <div className="header">
-        {view === -1 ? (
-          <div className="project-btn">My Projects</div>
-        ) : (
-          <div
-            className="project-btn return-btn"
-            onClick={() => changeView(-1)}
-          >
-            <FontAwesomeIcon
-              icon={faArrowLeft}
-              color="rgba(255, 255, 255, 0.6)"
-            />
-            <span> </span>
-            See All Projects
-          </div>
-        )}
+        <div className="project-btn">My Projects</div>
       </div>
       <div className="view">
         {view === -1 ? (

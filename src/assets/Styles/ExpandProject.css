@@ -1,10 +1,26 @@
 .project-detail {
   height: 100%;
-  width: 100%;
-  position: relative;
-  top: 6%;
-  padding: 1rem;
+  width: calc(100vw - 300px);
+  overflow-y: auto;
 }
+
+.header {
+  height: 6%;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: fixed;
+  z-index: 10;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.project-detail-content {
+  padding: 1rem;
+  margin-top: 3rem;
+  height: 100%;
+  width: 100%;
+}
+
 
 .main-img {
   background-color: #1c1c1c;

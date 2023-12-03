@@ -140,19 +140,14 @@
 
   .abt-content {
     flex-direction: column;
-    /* grid-template-columns: 100%; */
-    /* grid-template-rows: 100% 100%; */
     width: 100%;
     overflow-y: scroll;
     height: auto;
-
-    /* height: calc(94% * 2); */
   }
 
   .as0 {
     width: 100%;
     height: fit-content;
-    /* margin-bottom: 2rem; */
   }
 
   .as1 {
@@ -184,10 +179,6 @@
 }
 
 @media (max-width: 575px) {
-  /* .cr-1 {
-        display: none;
-    } */
-
   .sk {
     flex-direction: column;
     gap: 2rem;
