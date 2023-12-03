@@ -100,7 +100,7 @@ function Sidebar() {
                 <div className="btn-name">About</div>
                 <div className="btn-desc">Let's get to know each other</div>
               </div>
-            </div>  
+            </div>
           </div>
         </Link>
       </div>

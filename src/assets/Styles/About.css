@@ -1,199 +1,195 @@
 .about {
-    height: 100%;
-    width: calc(100vw - 300px);
+  height: 100%;
+  width: calc(100vw - 300px);
 }
 
 .abt-btn {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-family: "IBM Plex Mono", monospace;
-    color: #ffffff;
-    height: 6%;
-    width: 100%;
-    padding: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    z-index: 10;
-    background-color: hsl(0, 0%, 8%);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-family: "IBM Plex Mono", monospace;
+  color: #ffffff;
+  height: 6%;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: 10;
+  background-color: hsl(0, 0%, 8%);
 }
 
 .abt-content {
-    height: 94%;
-    width: 100%;
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
+  height: 94%;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
 }
 
-
 .as0 {
-    height: 100%;
-    width: 40%;
-    background-color: #1c1c1c;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    padding: 0.8rem;
-    overflow-y: auto;
-    overflow-x: hidden;
+  height: 100%;
+  width: 40%;
+  background-color: #1c1c1c;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.8rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .as0::-webkit-scrollbar {
-    width: 6px;
-    background-color: rgba(255, 255, 255, 0.06);
+  width: 6px;
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .as0::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.06);
-    border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
 }
 
 .my-img {
-    height: 70%;
-    width: fit-content;
-    background-color: aliceblue;
+  height: 70%;
+  width: fit-content;
+  background-color: aliceblue;
 }
 
 .my-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .my-info {
-    height: 30%;
-    width: 100%;
-    padding: 1rem 0rem;
+  height: 30%;
+  width: 100%;
+  padding: 1rem 0rem;
 }
 
 .hd {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1.4em;
-    text-align: start;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 0.75rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4em;
+  text-align: start;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
 }
 
 .bdy {
-    font-family: "Roboto Mono", monospace;
-    font-size: 0.7rem;
-    font-weight: 400;
-    line-height: 1.4em;
-    text-align: start;
-    color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
-    letter-spacing: 0em;
-    margin-bottom: 0.25rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  letter-spacing: 0em;
+  margin-bottom: 0.25rem;
 }
 
 .mrb {
-    margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .as1 {
-    height: 100%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-right: 1rem;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 1rem;
 }
 
 .as1::-webkit-scrollbar {
-    width: 6px;
-    background-color: rgba(255, 255, 255, 0.06);
+  width: 6px;
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .as1::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.06);
-    border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
 }
 
 .sk {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .clr {
-    color: rgba(255, 255, 255, 0.75);
-    letter-spacing: -0.2px;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: -0.2px;
 }
 
 .block {
-    padding: 1rem;
-    background-color: #1c1c1c;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1rem;
+  background-color: #1c1c1c;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .footer {
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 @media (max-width: 1200px) {
+  .about {
+    overflow-y: auto;
+  }
 
-    .about {
-        overflow-y: auto;
-    }
+  .abt-content {
+    flex-direction: column;
+    /* grid-template-columns: 100%; */
+    /* grid-template-rows: 100% 100%; */
+    width: 100%;
+    overflow-y: scroll;
+    height: auto;
 
-    .abt-content {
-        flex-direction: column;
-        /* grid-template-columns: 100%; */
-        /* grid-template-rows: 100% 100%; */
-        width: 100%;
-        overflow-y: scroll;
-        height: auto;
+    /* height: calc(94% * 2); */
+  }
 
-        /* height: calc(94% * 2); */
+  .as0 {
+    width: 100%;
+    height: fit-content;
+    /* margin-bottom: 2rem; */
+  }
 
-    }
+  .as1 {
+    width: 100%;
+  }
 
-    .as0 {
-        width: 100%;
-        height: fit-content;
-        /* margin-bottom: 2rem; */
-
-    }
-
-    .as1 {
-        width: 100%;
-    }
-
-    .my-img {
-        height: fit-content;
-    }
+  .my-img {
+    height: fit-content;
+  }
 }
 
 @media (max-width: 900px) {
-    .about {
-        width: 100vw;
-        position: absolute;
-        top: 10%;
-    }
+  .about {
+    width: 100vw;
+    position: absolute;
+    top: 10%;
+  }
 
-    .sk {
-        width: 100%;
-    }
+  .sk {
+    width: 100%;
+  }
 
-    .abt-btn {
-        border-bottom: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .abt-btn {
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 575px) {
-    /* .cr-1 {
+  /* .cr-1 {
         display: none;
     } */
 
-    .sk {
-        flex-direction: column;
-        gap: 2rem;
-    }
+  .sk {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }

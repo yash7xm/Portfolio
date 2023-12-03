@@ -1,127 +1,126 @@
 .project {
-    height: 50vh;
-    overflow: hidden;
-    cursor: pointer;
+  height: 50vh;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .project-img {
-    height: 80%;
-    background-color: #1c1c1c;
-    border-radius: 6px;
-    padding: 3% 10%;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    transition: padding 0.4s;
+  height: 80%;
+  background-color: #1c1c1c;
+  border-radius: 6px;
+  padding: 3% 10%;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: padding 0.4s;
 }
 
 .img {
-    padding: 0.5rem;
-    height: 100%;
-    width: 100%;
-    border: 3px solid rgba(255, 255, 255, 0.06);
-    border-radius: 6px;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+  border: 3px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
 }
 
 img {
-    border-radius: 6px;
+  border-radius: 6px;
 }
 
 .project-info {
-    display: flex;
-    align-items: center;
-    height: 20%;
+  display: flex;
+  align-items: center;
+  height: 20%;
 }
 
 .p-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .p-name,
 .project-date {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.4em;
-    text-align: start;
-    text-transform: uppercase;
-    color: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4em;
+  text-align: start;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .p-short-info,
 .project-desc {
-    font-family: "Roboto Mono", monospace;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 1.4em;
-    text-align: start;
-    color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .project-date {
-    width: 8%;
-    transform: translateX(30%);
-    transition: transform 0.4s;
-    display: flex;
-    gap: 0.6rem;
+  width: 8%;
+  transform: translateX(30%);
+  transition: transform 0.4s;
+  display: flex;
+  gap: 0.6rem;
 }
 
 .project-desc {
-    width: 65%;
+  width: 65%;
 }
 
 .project:hover .project-img {
-    padding: 1.5% 5%; 
+  padding: 1.5% 5%;
 }
 
 .project:hover .project-date {
-    transform: translateX(-10%);
+  transform: translateX(-10%);
 }
 
 .return-btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
-    .project {
-        height: 75vh;
-    }
+  .project {
+    height: 75vh;
+  }
 
-    .project-img {
-        padding: 3% 5%; 
+  .project-img {
+    padding: 3% 5%;
+  }
 
-    }
+  .project-desc {
+    display: none;
+  }
 
-    .project-desc {
-        display: none;
-    }
-
-    .project-date {
-        width: 15%;
-    }
+  .project-date {
+    width: 15%;
+  }
 }
 
 @media (max-width: 900px) {
-    .project {
-        height: 75vh;
-    }
+  .project {
+    height: 75vh;
+  }
 
-    .project-img {
-        padding: 1% 8%;
-    }
+  .project-img {
+    padding: 1% 8%;
+  }
 }
 
 @media (max-width: 600px) {
-    .project {
-        height: 40vh;
-    }
+  .project {
+    height: 40vh;
+  }
 
-    .project-img {
-        padding: 5% 12%;
-    }
+  .project-img {
+    padding: 5% 12%;
+  }
 
-    .arrow {
-        display: none;
-    }
+  .arrow {
+    display: none;
+  }
 }
