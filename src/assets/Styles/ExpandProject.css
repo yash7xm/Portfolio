@@ -171,4 +171,11 @@
     .main-img {
         height: 40%;
     }
+
+    .inner-img {
+        padding: 0.25rem;
+        border-radius: 6px;
+        height: 80%;
+        width: 80%;
+    }
 }
