@@ -3,7 +3,7 @@ import Sidebar from './Components/Sidebar'
 import Projects from './Components/Projects'
 import About from './Components/About'
 import { useState } from 'react'
-
+import { Outlet, createBrowserRouter } from 'react-router-dom'
 
 function App() {
 
@@ -17,9 +17,10 @@ function App() {
   return (
     <div className="app">
       <Sidebar changeContent={changeContent} />
-      {content === 0 ?
+      {/* {content === 0 ?
         <Projects /> :
-        <About />}
+        <About />} */}
+        <Outlet />
     </div>
   )
 }

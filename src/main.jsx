@@ -1,10 +1,43 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
+import { createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom'
+import Sidebar from './Components/Sidebar.jsx'
+import About from './Components/About.jsx'
+import { useState } from 'react'
+import Projects from './Components/Projects.jsx'
+
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <AppLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Projects />
+      },
+      {
+        path: '/about',
+        element: <About />
+      }, 
+    ]
+  },
+])
+
+function AppLayout() {
+
+  return (
+    <div className="app">
+      <Sidebar />
+      <Outlet />
+    </div>
+  )
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+   <RouterProvider router={router} />
   </React.StrictMode>,
 )
