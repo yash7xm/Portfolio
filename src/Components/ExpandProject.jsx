@@ -90,6 +90,13 @@ function ExpandProject() {
             </div>
           </div>
         </div>
+
+        <div className="flow-chart">
+          <img
+            src="https://res.cloudinary.com/dgl5jcwgb/image/upload/v1701714568/Untitled_1_xuir6o.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

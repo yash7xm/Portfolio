@@ -217,8 +217,14 @@
   width: 40%;
 }
 
+.flow-chart {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
+
 @media (max-width: 1200px) {
-  .main-img, .project-vid {
+  .main-img, .project-vid, .flow-chart {
     height: 75%;
   }
 
@@ -281,7 +287,7 @@
 }
 
 @media (max-width: 600px) {
-  .main-img, .project-vid {
+  .main-img, .project-vid, .flow-chart {
     height: 40%;
   }
 
