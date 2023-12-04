@@ -70,10 +70,7 @@ function ExpandProject() {
         </div>
 
         <div className="flow-chart">
-          <img
-            src= {pData[0].flowChart}
-            alt=""
-          />
+          <img src={pData[0].flowChart} alt="" />
         </div>
 
         <div className="project-text-0 project-text">
