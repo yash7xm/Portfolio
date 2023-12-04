@@ -224,7 +224,9 @@
 }
 
 @media (max-width: 1200px) {
-  .main-img, .project-vid, .flow-chart {
+  .main-img,
+  .project-vid,
+  .flow-chart {
     height: 75%;
   }
 
@@ -287,11 +289,14 @@
 }
 
 @media (max-width: 600px) {
-  .main-img, .project-vid, .flow-chart {
+  .main-img,
+  .project-vid,
+  .flow-chart {
     height: 40%;
   }
 
-  .inner-img, .vid {
+  .inner-img,
+  .vid {
     padding: 0.25rem;
     border-radius: 6px;
     height: 80%;
