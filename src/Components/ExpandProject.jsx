@@ -3,8 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import data from "../utils/projectsData";
+import { useParams } from "react-router-dom";
 
 function ExpandProject() {
+  const {pName} = useParams();
+  
+  let idx = 0;
+  for(let i=0; i<data.length; i++){
+    if(data[i].pName.toLowerCase() === pName.toLowerCase()) idx = i;
+  }
+
   return (
     <div className="project-detail">
       <Link to="/">
@@ -22,23 +30,23 @@ function ExpandProject() {
       <div className="project-detail-content">
         <div className="main-img">
           <div className="inner-img">
-            <img src={data[0].mainImg} alt="ProjectImage" />
+            <img src={data[idx].mainImg} alt="ProjectImage" />
           </div>
         </div>
 
         <div className="main-info">
           <div className="title">
-            <span>{data[0].pName}</span> {data[0].mainInfo}
+            <span>{data[idx].pName}</span> {data[idx].mainInfo}
           </div>
 
           <div className="features">
             <div className="summary">
               <div className="head">Summary</div>
-              <div className="body">{data[0].body}</div>
+              <div className="body">{data[idx].body}</div>
             </div>
             <div className="tech-stack">
               <div className="head">Tech Stack</div>
-              {data[0].techStack.map((tech, index) => (
+              {data[idx].techStack.map((tech, index) => (
                 <div key={index} className="body">
                   {tech}
                 </div>
@@ -47,36 +55,36 @@ function ExpandProject() {
             <div className="links">
               <div className="head">Links</div>
               <div className="body">
-                <a href={data[0].gitLink}>[GitHub]</a>
-                <a href={data[0].webLink}>[Website]</a>
+                <a href={data[idx].gitLink}>[GitHub]</a>
+                <a href={data[idx].webLink}>[Website]</a>
               </div>
             </div>
           </div>
         </div>
         <div className="project-vid">
           <div className="vid">
-            <img src={data[0].vidLink} alt="" />
+            <img src={data[idx].vidLink} alt="" />
           </div>
         </div>
         <div className="project-text-0 project-text">
           <div className="text">
-            <div className="hd">{data[0].projectText[0].head}</div>
-            <div className="bdy mrb">{data[0].projectText[0].body[0]}</div>
-            <div className="bdy mrb">{data[0].projectText[0].body[1]}</div>
-            <div className="bdy mrb">{data[0].projectText[0].body[2]}</div>
+            <div className="hd">{data[idx].projectText[0].head}</div>
+            <div className="bdy mrb">{data[idx].projectText[0].body[0]}</div>
+            <div className="bdy mrb">{data[idx].projectText[0].body[1]}</div>
+            <div className="bdy mrb">{data[idx].projectText[0].body[2]}</div>
           </div>
         </div>
 
         <div className="flow-chart">
-          <img src={data[0].flowChart} alt="" />
+          <img src={data[idx].flowChart} alt="" />
         </div>
 
         <div className="project-text-0 project-text">
           <div className="text">
-            <div className="hd">{data[0].projectText[1].head}</div>
-            <div className="bdy mrb">{data[0].projectText[1].body[0]}</div>
-            <div className="bdy mrb">{data[0].projectText[1].body[1]}</div>
-            <div className="bdy mrb">{data[0].projectText[1].body[2]}</div>
+            <div className="hd">{data[idx].projectText[1].head}</div>
+            <div className="bdy mrb">{data[idx].projectText[1].body[0]}</div>
+            <div className="bdy mrb">{data[idx].projectText[1].body[1]}</div>
+            <div className="bdy mrb">{data[idx].projectText[1].body[2]}</div>
           </div>
         </div>
       </div>
