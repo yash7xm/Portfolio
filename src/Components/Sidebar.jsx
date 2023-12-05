@@ -2,15 +2,21 @@ import React, { useEffect, useState } from "react";
 import "../assets/Styles/Sidebar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Sidebar() {
   const [mobile, setMobile] = useState(window.innerWidth <= 900);
-  const [border, setBorder] = useState(0);
+  let location = useLocation();
+  const [border, setBorder] = useState(location.pathname);
 
-  const handleSetBorder = (brdr) => {
-    setBorder(brdr);
+  const handleSetBorder = () => {
+    setBorder(location.pathname);
+    console.log(border);
   };
+
+  useEffect(() => {
+    handleSetBorder();
+  }, [location.pathname]);
 
   const setMobileNav = () => {
     setMobile((prevState) => !prevState);
@@ -47,16 +53,15 @@ function Sidebar() {
         </div>
       </div>
       <div className="buttons" style={{ display: mobile ? "none" : "flex" }}>
-        <Link to="./">
+        <Link to="/">
           <div
             className="projects-btn btn"
             onClick={() => {
               setMobileNav();
-              handleSetBorder(0);
             }}
             style={{
               border:
-                border === 0
+                border !== '/about'
                   ? "1px solid white"
                   : "1px solid  rgba(255, 255, 255, 0.06)",
             }}
@@ -80,11 +85,10 @@ function Sidebar() {
             className="about-btn btn"
             onClick={() => {
               setMobileNav();
-              handleSetBorder(1);
             }}
             style={{
               border:
-                border === 1
+                border === '/about'
                   ? "1px solid white"
                   : "1px solid  rgba(255, 255, 255, 0.06)",
             }}

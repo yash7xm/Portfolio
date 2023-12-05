@@ -129,6 +129,10 @@
   letter-spacing: 0em;
 }
 
+.tech-stack {
+  display: flex;
+}
+
 .links .head {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.75rem;

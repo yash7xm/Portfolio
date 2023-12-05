@@ -6,7 +6,7 @@ const data = [
     mainInfo:
       "IS A VERSATILE AND CUSTOM-TAILORED PROGRAMMING LANGUAGE DESIGNED TO PROVIDE CODERS WITH THE FREEDOM TO SHAPE THEIR CODING EXPERIENCES.",
     body: "Designed a custom programming language, built an interpreter, and developed language-processing tools, showcasing languagedevelopment expertise.",
-    techStack: ["Javascript"],
+    techStack: ["React", "Javascript"],
     gitLink: "/",
     webLink: "/",
     vidLink:
@@ -44,7 +44,7 @@ const data = [
     mainInfo:
       "IS A VERSATILE AND CUSTOM-TAILORED PROGRAMMING LANGUAGE DESIGNED TO PROVIDE CODERS WITH THE FREEDOM TO SHAPE THEIR CODING EXPERIENCES.",
     body: "Designed a custom programming language, built an interpreter, and developed language-processing tools, showcasing languagedevelopment expertise.",
-    techStack: ["Javascript"],
+    techStack: ["Javascript", "React", "React", "React", "React", "React"],
     gitLink: "/",
     webLink: "/",
     vidLink:
