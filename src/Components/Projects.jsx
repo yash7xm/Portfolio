@@ -7,7 +7,6 @@ import data from "../utils/projectsData";
 
 function Projects() {
   const [view, setView] = useState(-1);
-  const pData = data;
 
   const changeView = (index) => {
     console.log(index);
@@ -19,11 +18,12 @@ function Projects() {
 
   for (let i = 0; i < data.length; i++) {
     projects.push(
-      <Link to="/project/pid">
-        <Project displayData = {pData[i]}/>
+      <Link to={`/project/${data[i].pName}`} key={i}>
+        <Project displayData={data[i]} />
       </Link>
     );
   }
+  
 
   return (
     <div className="projects">
