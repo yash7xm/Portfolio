@@ -3,9 +3,11 @@ import "../assets/Styles/Projects.css";
 import Project from "./Project";
 import ExpandProject from "./ExpandProject";
 import { Link } from "react-router-dom";
+import data from "../utils/projectsData";
 
 function Projects() {
   const [view, setView] = useState(-1);
+  const pData = data;
 
   const changeView = (index) => {
     console.log(index);
@@ -15,10 +17,10 @@ function Projects() {
 
   let projects = [];
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < data.length; i++) {
     projects.push(
       <Link to="/project/pid">
-        <Project />
+        <Project displayData = {pData[i]}/>
       </Link>
     );
   }

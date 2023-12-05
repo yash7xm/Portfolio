@@ -2,29 +2,29 @@ import "../assets/Styles/Project.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-function Project() {
+function Project({displayData}) {
+  console.log(displayData);
   return (
     <div className="project">
       <div className="project-img">
         <div className="img">
           <img
-            src="https://res.cloudinary.com/dgl5jcwgb/image/upload/v1700902394/semmi_nnl2n0.png"
-            alt="Vyzon"
+            src = {displayData.mainImg}
+            alt = {displayData.pName}
           />
         </div>
       </div>
       <div className="project-info">
         <div className="p-info">
           <div className="project-name">
-            <div className="p-name">Vyzon</div>
-            <div className="p-short-info">Programming Language</div>
+            <div className="p-name">{displayData.pName}</div>
+            <div className="p-short-info">{displayData.pShortInfo}</div>
           </div>
           <div className="project-desc">
-            A custom programming language with support for basic operations,
-            loops, conditionals, functional, and object-oriented programming.
+          {displayData.pDesc}
           </div>
           <div className="project-date">
-            <div className="date">2023</div>
+            <div className="date">{displayData.year}</div>
             <div className="arrow">
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
