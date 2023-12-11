@@ -7,6 +7,7 @@ import About from "./Components/About.jsx";
 import Projects from "./Components/Projects.jsx";
 import ExpandProject from "./Components/ExpandProject.jsx";
 import Error from "./Components/Error.jsx";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,7 @@ function AppLayout() {
     <div className="app">
       <Sidebar />
       <Outlet />
+      <SpeedInsights />
     </div>
   );
 }
